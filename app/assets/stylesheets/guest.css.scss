@@ -1,5 +1,14 @@
 body.home-controller {
 	background-color: #def0fe !important;
+	h1 {
+		font-family: "Helvetica Neue",Arial,Helvetica,sans-serif;
+    font-size: 60px;
+    line-height: 1;
+    font-weight: bold;
+    letter-spacing: -.02em;
+    -webkit-font-smoothing: antialiased;
+    color: #3a3a3a;
+	}
 }
 .yellow {
 	color: yellow !important;
@@ -14,4 +23,23 @@ a.signup-button {
 	color: white !important;
 	margin-right: 10px;
 	border-radius: 5px;
+
+}
+#signup-button a:hover{
+		background-color: #3398b5 !important;
+}
+
+#home-message {
+	margin-top: 10%;
+	p {
+		font-family: "Open Sans",Verdana,Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    line-height: 1.6875;
+    font-weight: normal;
+    letter-spacing: 0;
+    -webkit-font-smoothing: antialiased;
+	}
+}	
+.custom-container {
+	margin: 0 !important;
 }

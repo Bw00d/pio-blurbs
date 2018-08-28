@@ -149,12 +149,12 @@ label, dt {
 }
 
 // Navbar
-$navbar-height:                    50px;
-$navbar-default-color:             white;
-$navbar-default-bg:                desaturate($brand-primary, 10%);
-$navbar-default-link-color:                white;
-$navbar-default-link-hover-color:          white;
-$navbar-default-link-hover-bg:             $brand-light;
+$navbar-height:                    60px;
+$navbar-default-color:             #3a3a3a;
+$navbar-default-bg:                white;
+$navbar-default-link-color:                #3a3a3a;
+$navbar-default-link-hover-color:          #3a3a3a;
+$navbar-default-link-hover-bg:             #f9f9f9;
 $navbar-default-link-active-color:         white;
 $navbar-default-link-active-bg:            $brand-light;
 $navbar-default-link-disabled-color:       $gray-lighter;

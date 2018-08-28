@@ -1,0 +1,11 @@
+{
+  "name": "pio-network",
+  "private": true,
+  "dependencies": {
+    "sweetalert2": "^6.6.9"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Bruno Facca <bruno@facca.info>",
+  "license": "MIT"
+}

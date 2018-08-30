@@ -33,7 +33,8 @@ describe 'layout and UI elements', type: :feature, js: true do
                                 href: root_path)
       expect(page).to have_link(I18n.t('navigation.contact'),
                                 href: contact_path)
-
+      expect(page).to have_link(I18n.t('navigation.users'),
+                                href: users_path)
       expect(page).not_to have_link(I18n.t('navigation.users'),
                                     href: admin_users_path)
     end

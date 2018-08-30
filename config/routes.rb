@@ -10,6 +10,8 @@ Rails.application.routes.draw do
     resources :users
   end
 
+  resources :users, only: [:index, :show]
+
   # form_for is easier to use with a resourceful route
   resources :contact_forms, only: [:create]
   # A non-resourceful route was used to place the contact form at /contact

@@ -6,3 +6,37 @@
   <%= f.label :last_name %>
   <%= f.text_field :last_name, class: "form-control" %>
 </div>
+<div class="form-group">
+  <%= f.label :agency %>
+  <%= f.text_field :agency, class: "form-control" %>
+</div>
+<div class="form-group">
+  <%= f.label "ROSS Host" %>
+  <%= f.text_field :host, class: "form-control" %>
+</div>
+<div class="form-group">
+  <%= f.label :qualification %>
+  <%#= f.text_field :qualification, class: "form-control" %>
+  <%= f.select :qualification, options_for_select([['PIO1'], ['PIO2'], ['PIOF']]), {prompt: ""}, class: "form-control" %>
+</div>
+<div class="form-group">
+  <%= f.label :trainee %>
+  <%= f.text_field :trainee, class: "form-control" %>
+</div>
+<div class="form-group">
+  <%= f.label :city %>
+  <%= f.text_field :city, class: "form-control" %>
+</div>
+<div class="form-group">
+  <%= f.label :state %>
+  <%= f.select :state, options_for_select(Collections::STATES), {prompt: ""}, class: "form-control" %>
+</div>
+<div class="form-group">
+  <%= f.label :phone %>
+  <%= f.text_field :phone, class: "form-control" %>
+</div>
+<div class="form-group">
+  <%= f.label :summary %>
+  <%= f.text_area :summary, class: "form-control" %>
+</div>
+

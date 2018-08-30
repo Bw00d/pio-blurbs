@@ -1,7 +1,7 @@
 <div class="col-md-4 center-block">
   <div class="panel panel-default devise-bs">
     <div class="panel-heading">
-      <h4><%= t('.sign_in', default: "Sign in") %></h4>
+      <h4><%= t('.sign_in', default: "Log in") %></h4>
     </div>
     <div class="panel-body">
       <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { role: "form" }) do |f| %>
@@ -22,7 +22,7 @@
           </div>
         <% end -%>
 
-        <%= f.submit  t('.sign_in', default: "Sign in"), class: "btn btn-primary" %>
+        <%= f.submit  t('.sign_in', default: "Log in"), class: "btn btn-primary" %>
       <% end %>
     </div>
   </div>

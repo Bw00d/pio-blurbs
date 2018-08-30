@@ -1,6 +1,6 @@
 RSpec::Matchers.define :require_login_api do
   expected_error =
-    { 'error' => 'You need to sign in or sign up before continuing.' }
+    { 'error' => 'You need to log in or sign up before continuing.' }
 
   match do
     expect(response).to have_http_status(401)

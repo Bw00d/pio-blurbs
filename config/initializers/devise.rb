@@ -93,7 +93,7 @@ Devise.setup do |config|
 
   # By default, Devise cleans up the CSRF token on authentication to
   # avoid CSRF token fixation attacks. This means that, when using AJAX
-  # requests for sign in and sign up, you need to get a new CSRF token
+  # requests for Log in and sign up, you need to get a new CSRF token
   # from the server. You can disable this option at your own risk.
   # config.clean_up_csrf_token_on_authentication = true
 
@@ -187,7 +187,7 @@ Devise.setup do |config|
   # ==> Configuration for :lockable
   # Defines which strategy will be used to lock an account.
   # :failed_attempts = Locks an account after a number of failed attempts to
-  # sign in.
+  # Log in.
   # :none            = No lock strategy. You should handle locking by yourself.
   config.lock_strategy = :failed_attempts
 
@@ -223,7 +223,7 @@ Devise.setup do |config|
   config.reset_password_within = 6.hours
 
   # When set to false, does not sign a user in automatically after their
-  # password is reset. Defaults to true, so a user is signed in automatically
+  # password is reset. Defaults to true, so a user is logged in automatically
   # after a reset.
   # config.sign_in_after_reset_password = true
 
@@ -254,7 +254,7 @@ Devise.setup do |config|
 
   # ==> Navigation configuration
   # Lists the formats that should be treated as navigational. Formats like
-  # :html, should redirect to the sign in page when the user does not have
+  # :html, should redirect to the Log in page when the user does not have
   # access, but formats like :xml or :json, should return 401.
   #
   # If you have any extra navigational formats, like :iphone or :mobile, you

@@ -4,7 +4,7 @@ def login_via_form(email, password)
   expect(page).to have_current_path(new_user_session_path)
   fill_in 'E-mail', with: email
   fill_in 'Password', with: password
-  click_button 'Sign in'
+  click_button 'Log in'
 end
 
 def click_navbar_dropdown_item(link_text)

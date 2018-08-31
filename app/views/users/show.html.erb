@@ -3,6 +3,12 @@
   	<div class="col-sm-12">
   		<div></div>
 			<div><%= @user.full_name %></div>
+			<div><%= @user.agency%></div>
+			<div><%= @user.qualification %><%= @user.trainee_status %></div>
+			<div><%= @user.host %></div>
+			<div><%= @user.email %></div>
+			<div><%= number_to_phone(@user.phone) %></div>
+			<div><%= @user.city_state %></div>
   	</div>
   </div>
 </div>

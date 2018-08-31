@@ -164,6 +164,9 @@ $navbar-default-link-disabled-bg:          $brand-light;
 .nav > li > a {
   font-weight: 500;
 }
+.navbar-default {
+  border-bottom: 1px solid #cfe0ed;
+}
 
 // Prevent navbar from covering other elements
 body {

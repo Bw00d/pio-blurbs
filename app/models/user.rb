@@ -43,6 +43,22 @@ class User < ApplicationRecord
     [first_name, last_name].join(' ')
   end
 
+  def trainee_status
+    if self.trainee == true
+      "(t)"
+    end
+  end
+
+  def city_state
+    if !self.city.empty? and !self.state.empty?
+      self.city + ", " + self.state
+    elsif self.city 
+      self.city 
+    else
+      self.state
+    end
+  end
+
   private
 
   def set_default_role

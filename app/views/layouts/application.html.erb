@@ -40,9 +40,6 @@ controller and action allows the implementation of page-specific CSS and JS %>
             <%= yield(:navigation_menu) %>
             <li><%= link_to t('navigation.contact'), contact_path %></li>
             
-            <% if user_signed_in? && !current_user.admin? %>
-              <li><%= link_to t('navigation.users'), users_path %></li>
-            <% end %>
           </ul>
 
           <ul class="nav navbar-nav navbar-right">

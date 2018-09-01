@@ -9,8 +9,8 @@
         <%= blurb.user_id %>
       </div>
         <%#= link_to 'Show', blurb %>
-        <%= link_to 'Edit', edit_blurb_path(blurb) %>
-        <%= link_to 'Destroy', blurb, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <%= link_to (fa_icon('pencil-alt')), edit_blurb_path(blurb), class: "edit-button btn btn-success" %>
+        
       
     <% end %>
 

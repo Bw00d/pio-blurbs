@@ -10,5 +10,6 @@
   <%= @blurb.user_id %>
 </p>
 
-<%= link_to 'Edit', edit_blurb_path(@blurb) %> |
+<%= link_to (fa_icon('pencil-alt')), edit_blurb_path(@blurb), class: "button tiny radius success edit-button", id: "floating-button" %>
+<%= link_to 'Destroy', @blurb, method: :delete, data: { confirm: 'Are you sure?' } %>
 <%= link_to 'Back', blurbs_path %>

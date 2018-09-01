@@ -20,5 +20,6 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require select2
+//= require font_awesome5
 
 //= require_tree .

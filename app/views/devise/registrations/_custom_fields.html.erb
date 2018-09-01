@@ -11,8 +11,12 @@
   <%= f.text_field :agency, class: "form-control" %>
 </div>
 <div class="form-group">
-  <%= f.label "ROSS Host" %>
+  <%= f.label :host, "ROSS Host" %>
   <%= f.text_field :host, class: "form-control" %>
+</div>
+<div class="form-group">
+  <%= f.label :status %>
+  <%= f.select :status, options_for_select([['Available', 1], ['On Assignment', 2], ['Unavailable', 2]]), {prompt: ""}, class: "form-control" %>
 </div>
 <div class="form-group">
   <%= f.label :qualification %>

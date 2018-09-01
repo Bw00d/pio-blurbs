@@ -59,6 +59,17 @@ class User < ApplicationRecord
     end
   end
 
+  def display_status
+    case self.status
+    when 1
+      "Available"
+    when 2
+      "On Assignment"
+    when 3
+      "Unavailable"
+    end
+  end
+
   private
 
   def set_default_role

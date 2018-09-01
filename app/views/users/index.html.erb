@@ -1,11 +1,34 @@
-<div id="users-page" class="container ">
+<div id="users-page" >
   <div class="row">
   	<div class="col-sm-12">
-  		<ul>
+  		<h1>Information Officers</h1>
   			<% @users.each do |user| %>
-  			<li><%= link_to user.full_name, user %></li>
+		  		<div class="tcard-head">
+		  			<div class="row">
+			  			<div class="col-xs-7 text-left">
+			  				<span class="avatar"></span><span class="sm-padding-left"><%= link_to user.full_name, user %></span>
+			  			</div>
+			  			<div class="col-xs-2">
+			  				<%=  user.qualification %><%= user.trainee_status %>
+			  			</div>
+			  			<div class="col-xs-3 text-right">
+			  				<%= user.display_status %>
+			  			</div>
+			  		</div>
+	  			</div>
+		  		<div class="row">
+		  			<div class="col-xs-1 lt-gray-bg"></div><!-- leave empty -->
+		  			<div class="col-xs-10 white-bg pio-details">
+		  				<div>Agency: <%= user.agency %></div>
+		  				<div>Host: <%= user.host %></div>
+		  				<div>Email: <%= user.email %></div>
+		  				<div>Phone: <%= number_to_phone(user.phone) %></div>
+		  				<div><%= user.summary %></div>
+		  			</div><div class="col-xs-1 lt-gray-bg"><!-- leave empty -->
+
+		  			</div>
+		  		</div>
   			<% end %>
-  		</ul>
   	</div>
   </div>
 </div>

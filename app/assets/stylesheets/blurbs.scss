@@ -13,3 +13,33 @@
   height: 35px;
   color: black;
 }
+#hash-col {
+  ul {
+    padding-left: 0;
+  }
+
+  
+}
+#blurb-hash-holder {
+  min-height: 500px;
+  h1 {
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+}
+.dashed {
+  border: dashed 1px orange;
+}
+
+.blurb {
+  margin-bottom: 20px;
+}
+
+.tag {
+  list-style: none;
+  span {
+    padding: 2px 6px;
+  }
+  padding-bottom: 3px;
+}

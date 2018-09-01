@@ -1,19 +1,32 @@
 <%= content_for :title, "Blurbs" %>
+<div id="blurb-hash-holder" class="container-fluid ">
+	<div class="row">
+		<div id="hash-col" class="col-md-3">
+			<h1>Tags</h1>
+			<ul>
+				<li class="tag"><span class="lg-gray-bg">#burnouts</span></li>
+				<li class="tag"><span class="lg-gray-bg">#smoke</span></li>
+				<li class="tag"><span class="lg-gray-bg">#transition</span></li>
+			</ul>
 
-<h1>Blurbs</h1>
+		</div>
+		<div id="blurb-col" class="col-md-9">
+		<%= link_to 'New Blurb', new_blurb_path, class: 'btn btn-small btn-success float-right' %>
+			<h1>Blurbs</h1>
 
 
-    <% @blurbs.each do |blurb| %>
-      <div class="col-lg-8">
-        <%= simple_format(blurb.content) %>
-        <%= blurb.user_id %>
-      </div>
-        <%#= link_to 'Show', blurb %>
-        <%= link_to (fa_icon('pencil-alt')), edit_blurb_path(blurb), class: "edit-button btn btn-success" %>
-        
-      
-    <% end %>
+	    <% @blurbs.each do |blurb| %>
+	      <div class="blurb">
+	        <%= simple_format(blurb.content) %>
+	        <%= link_to (fa_icon('pencil-alt')), edit_blurb_path(blurb), class: "edit-button btn btn-info" %>
+	      </div>
+	        <%#= link_to 'Show', blurb %>
+	        
+	      
+	    <% end %>
+	   
+	 
+	  </div>
 
-<br>
-
-<%= link_to 'New Blurb', new_blurb_path, class: 'btn btn-success' %>
+	</div>
+</div>

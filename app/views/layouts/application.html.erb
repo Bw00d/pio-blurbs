@@ -91,6 +91,7 @@ controller and action allows the implementation of page-specific CSS and JS %>
       <%= content_for?(:main_contents) ? yield(:main_contents) : yield %>
     </div><!-- container-fluid -->
   </main>
+      <%=  yield(:second_contents)  %>
 
   <%# footer styled for Bootstrap 3 %>
   <footer>

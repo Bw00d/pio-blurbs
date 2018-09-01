@@ -1,7 +1,7 @@
 #users-page {
 	.avatar {
 		margin-top: -10px;
-		margin-right: 10px;
+		margin-right: 20px;
 	  text-align: center;
 	  font-size: 1.2em !important;
 	  -moz-border-radius: 20px/20px !important;
@@ -15,17 +15,44 @@
 	}
 }
 .tcard-head {
-	border-top: 1px solid #f2f2f2;
+
+	border: 2px solid #d5f3ff;
 	padding: 15px 15px 5px 15px;
 	background-color: white;
-}
-.card-head {
-	background-color: white;
+	font-weight: 600;
+	color: black;
+	z-index: 2;
 }
 body.users-controller {
   background-color: #f2f2f2;
 }
 .pio-details {
-	min-height: 100px;
-	overflow: hidden;
+	margin-top: -2px;
+	border-right: 2px solid #d5f3ff;
+	border-left: 2px solid #d5f3ff;
+	// overflow:hidden;
+	display: none;
+}
+.details-container {
+	// overflow:hidden;
+}
+.tcard {
+	border-bottom: 1px solid #d5f3ff;
+	color: #d5f3ff;
+	span {
+		color: black;
+		margin-left: 10px;
+	}
+}
+.last-name {
+	font-size: 1.2em;
+}
+.available {
+	color: #5fb760;
+}
+.unavailable {
+	color: gray;
+}
+.onassignment {
+	color: red;
 }

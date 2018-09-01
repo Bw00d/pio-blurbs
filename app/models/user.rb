@@ -50,7 +50,7 @@ class User < ApplicationRecord
   end
 
   def city_state
-    if !self.city.empty? and !self.state.empty?
+    if !self.city.blank? and !self.state.blank?
       self.city + ", " + self.state
     elsif self.city 
       self.city 

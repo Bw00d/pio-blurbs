@@ -16,12 +16,12 @@
 </div>
 <div class="form-group">
   <%= f.label :status %>
-  <%= f.select :status, options_for_select([['Available', 1], ['On Assignment', 2], ['Unavailable', 2]]), {prompt: ""}, class: "form-control" %>
+  <%= f.select :status, options_for_select([['Available', 1], ['On Assignment', 2], ['Unavailable', 3]], @user.status ), {}, { class: "form-control" }   %>
 </div>
 <div class="form-group">
   <%= f.label :qualification %>
   <%#= f.text_field :qualification, class: "form-control" %>
-  <%= f.select :qualification, options_for_select([['PIO1'], ['PIO2'], ['PIOF']]), {prompt: ""}, class: "form-control" %>
+  <%= f.select :qualification, options_for_select([['PIO1'], ['PIO2'], ['PIOF']], @user.qualification),  {}, class: "form-control" %>
 </div>
 <div class="form-group">
   <%= f.label :trainee %>
@@ -33,7 +33,7 @@
 </div>
 <div class="form-group">
   <%= f.label :state %>
-  <%= f.select :state, options_for_select(Collections::STATES), { value: @user.state }, class: "form-control"  %>
+  <%= f.select :state, options_for_select(Collections::STATES, @user.state), {}, class: "form-control"  %>
 </div>
 <div class="form-group">
   <%= f.label :phone %>

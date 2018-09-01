@@ -3,31 +3,34 @@
   	<div class="col-sm-12">
   		<h1>Information Officers</h1>
   			<% @users.each do |user| %>
+  			<div class="card">
 		  		<div class="tcard-head">
 		  			<div class="row">
 			  			<div class="col-xs-7 text-left">
-			  				<span class="avatar"></span><span class="sm-padding-left"><%= link_to user.full_name, user %></span>
+			  				<span class="avatar"></span><%= user.first_name %> <span class="last-name"><%= user.last_name.upcase %></span>
 			  			</div>
 			  			<div class="col-xs-2">
 			  				<%=  user.qualification %><%= user.trainee_status %>
 			  			</div>
-			  			<div class="col-xs-3 text-right">
+			  			<div class="col-xs-3 text-right pio-status">
 			  				<%= user.display_status %>
 			  			</div>
 			  		</div>
 	  			</div>
-		  		<div class="row">
-		  			<div class="col-xs-1 lt-gray-bg"></div><!-- leave empty -->
-		  			<div class="col-xs-10 white-bg pio-details">
-		  				<div>Agency: <%= user.agency %></div>
-		  				<div>Host: <%= user.host %></div>
-		  				<div>Email: <%= user.email %></div>
-		  				<div>Phone: <%= number_to_phone(user.phone) %></div>
-		  				<div><%= user.summary %></div>
-		  			</div><div class="col-xs-1 lt-gray-bg"><!-- leave empty -->
-
+		  		<div class="row details-container">
+		  			
+		  			<div class="col-xs-10 col-xs-offset-1 white-bg pio-details">
+		  				<div class="tcard col-xs-12 col-sm-6">Agency: <span><%= user.agency %></span></div>
+		  				<div class="tcard col-xs-12 col-sm-6">Host: <span><%= user.host %></span></div>
+		  				<div class="tcard col-xs-12 col-sm-6">Location: <span><%= user.city_state %></span></div>
+		  				<div class="tcard col-xs-12 col-sm-6">Email: <span><%= user.email %></span></div>
+		  				<div class="tcard col-xs-12 col-sm-6">Cell Phone: <span><%= number_to_phone(user.phone) %></span></div>
+		  				<div class="tcard col-xs-12 col-sm-6">Work Phone: <span><%= number_to_phone(user.phone) %></span></div>
+		  				<div class="tcard col-xs-12">Summary: <span><%= user.summary %></span></div>
+			  			
 		  			</div>
 		  		</div>
+  			</div>
   			<% end %>
   	</div>
   </div>

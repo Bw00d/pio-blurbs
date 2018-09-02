@@ -7,12 +7,12 @@
 		  		<div class="tcard-head">
 		  			<div class="row">
 			  			<div class="col-xs-7 text-left">
-			  				<div class="avatar"><%= image_tag 'photo.jpg' %></div><%= user.first_name %> <span class="last-name"><%= user.last_name.upcase %></span>
+			  				<div class="avatar"><%= image_tag 'photo.jpg' %></div><%= user.full_name %>
 			  			</div>
 			  			<div class="col-xs-2">
 			  				<%=  user.qualification %><%= user.trainee_status %>
 			  			</div>
-			  			<div class="col-xs-3 text-right pio-status">
+			  			<div class="col-xs-3 text-right">
 			  				<%= user.display_status %>
 			  			</div>
 			  		</div>

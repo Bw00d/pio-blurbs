@@ -49,3 +49,13 @@ body.blurbs-controller {
     border-bottom: none;
   }
 }
+.blurb-tags {
+  li {
+    display: inline-block;
+    margin-right: 5px;
+  }
+}
+#new-blurb {
+  position: fixed;
+  right: 10px;
+}

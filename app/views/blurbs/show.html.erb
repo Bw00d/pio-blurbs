@@ -1,15 +1,19 @@
 
 
+<%= link_to 'Back', blurbs_path %>
 <p>
   <strong>Content:</strong>
-  <%= simple_format(@blurb.content) %>
+  <%= simple_format(@blurb.content) %> <%= link_to "author", "javascript:;",class: "float-right author" %>
 </p>
+	<div class="blurb-tags">
+		<ul>
+			<% @blurb.tag_list.each do |t| %>
+				<li class="tag"><span class="lg-gray-bg"><%= link_to t, tag_path(t) %></span>
 
-<p>
-  <strong>User:</strong>
-  <%= @blurb.user_id %>
-</p>
+				</li>
+			<% end %>		
+		</ul>
+	</div>
 
-<%= link_to (fa_icon('pencil-alt')), edit_blurb_path(@blurb), class: "button tiny radius success edit-button", id: "floating-button" %>
-<%= link_to 'Destroy', @blurb, method: :delete, data: { confirm: 'Are you sure?' } %>
-<%= link_to 'Back', blurbs_path %>
+
+<%= link_to (fa_icon('pencil-alt')), edit_blurb_path(@blurb), class: "btn edit-button btn-info"%></br>

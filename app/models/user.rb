@@ -4,6 +4,8 @@ class User < ApplicationRecord
   include FriendlyId
   friendly_id :full_name, use: :slugged
 
+  has_many :blurbs
+
   # Roles used by the authorization setup
   enum role: { user: 0, admin: 1 }
 
@@ -20,7 +22,7 @@ class User < ApplicationRecord
   # Callback to set the default role of new records
   after_initialize :set_default_role, if: :new_record?
 
-  devise :confirmable, :database_authenticatable, :lockable, :registerable,
+  devise :database_authenticatable, :lockable, :registerable,
          :recoverable, :rememberable, :timeoutable, :trackable, :validatable
 
   # Allow a single Ransack search field to search the virtual attr 'full_name'

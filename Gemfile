@@ -60,6 +60,7 @@ gem 'select2-rails'
 # Get e-mail notifications when exceptions happen in the production environment
 gem 'exception_notification'
 gem 'font_awesome5_rails'
+gem 'acts-as-taggable-on', '~> 6.0'
 
 group :test do
   gem 'database_cleaner'

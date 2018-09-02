@@ -5,7 +5,11 @@ class BlurbsController < ApplicationController
   # GET /blurbs
   # GET /blurbs.json
   def index
+    if params[:tag]
+    @blurbs = Blurb.tagged_with(params[:tag])
+  else
     @blurbs = Blurb.all
+  end
   end
 
   # GET /blurbs/1
@@ -25,7 +29,7 @@ class BlurbsController < ApplicationController
   # POST /blurbs
   # POST /blurbs.json
   def create
-    @blurb = Blurb.new(blurb_params)
+    @blurb = Blurb.new(blurb_params.merge({user_id: current_user.id}))
 
     respond_to do |format|
       if @blurb.save
@@ -42,7 +46,7 @@ class BlurbsController < ApplicationController
   # PATCH/PUT /blurbs/1.json
   def update
     respond_to do |format|
-      if @blurb.update(blurb_params)
+      if @blurb.update(blurb_params.merge({user_id: current_user.id}))
         format.html { redirect_to @blurb, notice: 'Blurb was successfully updated.' }
         format.json { render :show, status: :ok, location: @blurb }
       else
@@ -70,6 +74,6 @@ class BlurbsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def blurb_params
-      params.require(:blurb).permit(:content, :user_id)
+      params.require(:blurb).permit(:content, :user_id, :tag_list)
     end
 end

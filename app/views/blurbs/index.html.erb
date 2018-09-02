@@ -6,6 +6,7 @@
 			<h1>Tags</h1>
 		
 			<ul>
+				<li class="tag"><span class="lg-gray-bg"><%= link_to 'all blurbs', blurbs_path %></span></li>
 				<% tag_cloud Blurb.tag_counts, %w[s m l] do |tag| %>
 				<li class="tag"><span class="lg-gray-bg"><%= link_to tag.name, tag_path(tag.name) %></span></li>
 				<% end %>
@@ -18,7 +19,7 @@
 
 	    <% @blurbs.each do |blurb| %>
 	      <div class="blurb">
-	        <%= simple_format(blurb.content) %><%= link_to "author", blurb.user,class: "float-right author" %>
+	        <%= simple_format(blurb.content) %><% unless current_user == blurb.user %><%= link_to "author", blurb.user,class: "float-right author" %><% end %>
 	        <div class="blurb-tags">
 						<ul>
 							<% blurb.tag_list.each do |t| %>

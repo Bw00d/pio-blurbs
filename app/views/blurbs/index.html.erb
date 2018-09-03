@@ -3,6 +3,7 @@
 		<%= link_to 'New Blurb', new_blurb_path, class: 'btn btn-small btn-success', id: "new-blurb" %>
 	<div class="row">
 		<div id="hash-col" class="col-sm-3">
+			<div class="fixed">
 			<h1>Tags</h1>
 		
 			<ul>
@@ -11,7 +12,7 @@
 				<li class="tag"><span class="lg-gray-bg"><%= link_to tag.name, tag_path(tag.name) %></span></li>
 				<% end %>
 			</ul>
-
+		</div>
 		</div>
 		<div id="blurb-col" class="col-sm-9">
 			<h1>Blurbs</h1>
@@ -43,7 +44,4 @@
 </div>
 
 <%= content_for :second_contents do %>
-<div class="container-fluid second-block blue-bg">
-
-</div>
 <% end %>

@@ -7,12 +7,10 @@
 		  		<div class="tcard-head">
 		  			<div class="row">
 			  			<div class="col-xs-7 text-left">
-			  				<div class="avatar"></div><%= user.full_name %>
+			  				<div class="avatar"></div><%= user.full_name %>  -  <%=  user.qualification %><%= user.trainee_status %>
 			  			</div>
-			  			<div class="col-xs-2">
-			  				<%=  user.qualification %><%= user.trainee_status %>
-			  			</div>
-			  			<div class="col-xs-3 text-right">
+			  	
+			  			<div class="col-xs-5 text-right">
 			  				<%= user.display_status %>
 			  			</div>
 			  		</div>
@@ -20,21 +18,19 @@
 		  		<div class="row details-container">
 		  			
 		  			<div class="col-xs-10 col-xs-offset-1 white-bg pio-details">
-		  				<div class="tcard col-xs-12 col-sm-6">Agency: <span><%= user.agency %></span></div>
-		  				<div class="tcard col-xs-12 col-sm-6">Host: <span><%= user.host %></span></div>
-		  				<div class="tcard col-xs-12 col-sm-6">Location: <span><%= user.city_state %></span></div>
-		  				<div class="tcard col-xs-12 col-sm-6">Email: <span><%= user.email %></span></div>
-		  				<div class="tcard col-xs-12 col-sm-6">Cell Phone: <span><%= number_to_phone(user.phone) %></span></div>
-		  				<div class="tcard col-xs-12 col-sm-6">Work Phone: <span><%= number_to_phone(user.phone) %></span></div>
-		  				<div class="tcard col-xs-12">Summary: <span><%= simple_format(user.summary) %></span></div>
-		  				<div class="tcard col-xs-12">Skills:
-		  					<div class="blurb-tags">
-									<ul>
-										<% user.tag_list.each do |t| %>
-											<li class="tag"><span class="lg-gray-bg"><%= t %></span></li>
-										<% end %>		
-									</ul>
-								</div>
+		  				<div class="tcard col-xs-12 col-sm-6">Agency:</br><span><%= user.agency %></span></div>
+		  				<div class="tcard col-xs-12 col-sm-6">Host:</br><span><%= user.host %></span></div>
+		  				<div class="tcard col-xs-12 col-sm-6">Location:</br><span><%= user.city_state %></span></div>
+		  				<div class="tcard col-xs-12 col-sm-6">Email:</br><span><%= user.email %></span></div>
+		  				<div class="tcard col-xs-12 col-sm-6">Cell Phone:</br><span><%= number_to_phone(user.phone) %></span></div>
+		  				<div class="tcard col-xs-12 col-sm-6">Work Phone:</br><span><%= number_to_phone(user.phone) %></span></div>
+		  				<div class="tcard col-xs-12">Summary:<span><%= simple_format(user.summary) %></span></div>
+		  				<div class="tcard col-xs-12 blurb-tags">Skills:
+								<ul class="skills-tags">
+									<% user.tag_list.each do |t| %>
+										<li class="tag"><span class="lg-gray-bg"><%= t %></span></li>
+									<% end %>		
+								</ul>
 		  				</div>
 			  			
 		  				<%= link_to "Blurbs", user_path(user), class: "btn btn-info float-right md-margin-bottom" %>

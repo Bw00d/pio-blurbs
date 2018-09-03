@@ -31,6 +31,6 @@ class Users::RegistrationsController < Devise::RegistrationsController
   def custom_parameters
     # Do NOT include attributes that the user is not supposed to change, such
     # as his own role.
-    %i[first_name last_name agency qualification phone status city state summary host trainee]
+    %i[first_name last_name agency qualification phone status city state summary host trainee tag_list]
   end
 end

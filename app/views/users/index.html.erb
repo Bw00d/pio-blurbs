@@ -31,12 +31,13 @@
 		  					<div class="blurb-tags">
 									<ul>
 										<% user.tag_list.each do |t| %>
-											<li class="tag"><span class="lg-gray-bg"><%= link_to t, tag_path(t) %></span></li>
+											<li class="tag"><span class="lg-gray-bg"><%= t %></span></li>
 										<% end %>		
 									</ul>
 								</div>
 		  				</div>
 			  			
+		  				<%= link_to "Blurbs", user_path(user), class: "btn btn-info float-right md-margin-bottom" %>
 		  			</div>
 		  		</div>
   			</div>

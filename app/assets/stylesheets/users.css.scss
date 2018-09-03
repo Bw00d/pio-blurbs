@@ -46,8 +46,17 @@
 	color: black;
 	z-index: 2;
 }
-body.users-controller {
+
+body.users-controller.index-action {
   background-color: #f2f2f2;
+  
+}
+body.users-controller.show-action {
+	background-color: white !important;
+	.navbar-default {
+    background-color: #f2f2f2 !important;
+    border-bottom: none;
+  }
 }
 .pio-details {
 	margin-top: -2px;
@@ -77,4 +86,10 @@ body.users-controller {
 }
 .onassignment {
 	color: red;
+}
+#user-tags {
+	li {
+		display: inline-block;
+		margin-right: 10px !important;
+	}
 }

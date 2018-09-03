@@ -1,14 +1,48 @@
-<div id="user-page" class="container ">
-  <div class="row">
-  	<div class="col-sm-12">
-  		<div></div>
-			<div><%= @user.full_name %></div>
+<%= content_for :title, @user.full_name %>
+<div id="blurb-hash-holder" class="container-fluid ">
+	<div class="row">
+		<div id="hash-col" class="col-sm-3">
+			<h1><%= @user.full_name %></h1>
 			<div><%= @user.agency%></div>
 			<div><%= @user.qualification %><%= @user.trainee_status %></div>
 			<div><%= @user.host %></div>
 			<div><%= @user.email %></div>
 			<div><%= number_to_phone(@user.phone) %></div>
 			<div><%= @user.city_state %></div>
-  	</div>
-  </div>
+			<div class="user-tags">
+						<ul>
+							<% @user.tag_list.each do |t| %>
+								<li class="tag"><span class="lg-gray-bg"><%= t %></span></li>
+							<% end %>		
+						</ul>
+					</div>
+			
+		</div>
+		<div id="blurb-col" class="col-sm-9">
+			<h1>Blurbs</h1>
+
+
+	    <% @blurbs.each do |blurb| %>
+	      <div class="blurb">
+	        <%= simple_format(blurb.content) %>
+	        <div class="blurb-tags">
+						<ul>
+							<% blurb.tag_list.each do |t| %>
+								<li class="tag"><span class="lg-gray-bg"><%= link_to t, tag_path(t) %></span></li>
+							<% end %>		
+						</ul>
+					</div>
+	      </div>
+
+	        <%#= link_to 'Show', blurb %>	      
+	      
+	    <% end %>
+	   
+	 
+	  </div>
+
+	</div>
 </div>
+
+<%= content_for :second_contents do %>
+<% end %>

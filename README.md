@@ -19,6 +19,7 @@ I will be improving the functionality and branding in the coming weeks. I will a
 - Set up some form of pagination for blurbs and users
 - Make tag cloud stationary so that scrolling does not hide them
 - Add some sort of public feed
+- Make footer Sticky
 
 ## License
 

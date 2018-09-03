@@ -8,7 +8,7 @@ class BlurbsController < ApplicationController
     if params[:tag]
     @blurbs = Blurb.tagged_with(params[:tag])
   else
-    @blurbs = Blurb.all
+    @blurbs = current_user.blurbs
   end
   end
 

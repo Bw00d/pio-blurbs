@@ -22,6 +22,7 @@
 //   position:fixed; top:10; left: 10;
 // }
 #blurb-hash-holder {
+  margin-top: 45px;
   min-height: 500px;
   h1 {
     font-weight: 600;
@@ -57,7 +58,20 @@ body.blurbs-controller.index-action {
   }
 }
 #new-blurb {
-  position: fixed;
+  // position: fixed;
+  float: right;
   right: 10px;
   z-index: 2;
+}
+#new-blurb-button {
+  position: fixed;
+  display: block;
+  height: 50px !important;
+  clear: both;
+  width: 100%;
+  background-color: white;
+  z-index: 2;
+  margin-top: -20px;
+  padding-top: 5px;
+  padding-right: 10px;
 }

@@ -1,6 +1,12 @@
 <%= content_for :title, "Blurbs" %>
-<div id="blurb-hash-holder" class="container-fluid ">
+<div class="row">
+<%= content_for :second_header do %>
+	<div id="new-blurb-button">
 		<%= link_to 'New Blurb', new_blurb_path, class: 'btn btn-small btn-success', id: "new-blurb" %>
+	</div>
+<% end %>
+</div>	
+<div id="blurb-hash-holder" class="container-fluid ">
 	<div class="row">
 		<div id="hash-col" class="col-sm-3">
 			<div id="fixed-until"> <!-- Fix the tags to left for large screens and top for small -->
@@ -42,6 +48,3 @@
 
 	</div>
 </div>
-
-<%= content_for :second_contents do %>
-<% end %>

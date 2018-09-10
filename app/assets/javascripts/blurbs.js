@@ -1,6 +1,16 @@
 $( document ).on('turbolinks:load', function() {
-	$(".author").hover(function() {
-		$(this).text("test");
-	});
+
+
+	
+  $('.author-box').mouseover(function() {
+    $('.author').hide();
+    $(".author-name").show();
+ 
+  });
+  $('.author-box').mouseleave(function() {
+    $('.author').show();
+    $(".author-name").hide();
+ 
+  });
 	
 });

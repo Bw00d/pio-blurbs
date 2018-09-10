@@ -26,7 +26,12 @@
 
 	    <% @blurbs.each do |blurb| %>
 	      <div class="blurb">
-	        <%= simple_format(blurb.content) %><% unless current_user == blurb.user %><%= link_to "author", blurb.user,class: "float-right author" %><% end %>
+	        <%= simple_format(blurb.content) %><% unless current_user == blurb.user %>
+	        <div class="author-box">
+		        <%= link_to blurb.user.full_name, blurb.user,class: "float-right author-name" %>
+		        <%= link_to "author", blurb.user,class: "float-right author" %>
+	        </div>
+	        <% end %>
 	        <div class="blurb-tags">
 						<ul>
 							<% blurb.tag_list.each do |t| %>

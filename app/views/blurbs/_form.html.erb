@@ -15,7 +15,7 @@
 
   <div class="form-group">
     <%= f.label :tag_list, "Tags (separated by commas)" %>
-    <%= f.text_field :tag_list, class: "form-control" %>
+    <%= f.text_field :tag_list, value: blurb.tag_list.to_s, class: "form-control" %>
   </div>
   <div class="form-group">
     <%= f.label :content %>

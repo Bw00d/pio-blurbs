@@ -24,8 +24,8 @@
   <%= f.select :qualification, options_for_select([['PIO1'], ['PIO2'], ['PIOF']], @user.qualification),  {}, class: "form-control" %>
 </div>
 <div class="form-group">
-  <%= f.label :trainee %>
-  <%= f.text_field :trainee, class: "form-control" %>
+  <%= f.check_box :trainee %>
+  <%= f.label "Trainee" %>
 </div>
 <div class="form-group">
   <%= f.label :city %>

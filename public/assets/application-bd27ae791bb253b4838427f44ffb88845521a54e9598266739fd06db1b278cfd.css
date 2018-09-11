@@ -82,56 +82,74 @@ label, dt {
   border-bottom: 1px solid #cfe0ed;
 }
 
-/* line 172, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 170, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+.logo-text {
+  font-size: 40px;
+  font-weight: 700;
+}
+/* line 173, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+.logo-text .first-hash {
+  color: #FF8200;
+}
+/* line 176, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+.logo-text .second-hash {
+  color: #3e00a4;
+}
+/* line 179, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+.logo-text .third-hash {
+  color: green;
+}
+
+/* line 185, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 body {
   padding-top: 80px;
 }
 
-/* line 177, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 190, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .navbar-brand {
-  padding-top: 10px !important;
+  padding-top: 20px !important;
 }
 
-/* line 206, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 219, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 dt, dd {
   padding: 5px 0 5px 0;
 }
 
-/* line 212, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 225, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .center-block {
   float: none !important;
 }
 
-/* line 215, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 228, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .footer {
   margin-top: 10px;
 }
 
-/* line 222, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 235, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .custom-index-table th:last-of-type {
   width: 120px;
 }
-/* line 225, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 238, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .custom-index-table td:last-of-type {
   text-align: center;
 }
-/* line 227, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 240, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .custom-index-table td:last-of-type a {
   text-decoration: none !important;
 }
-/* line 231, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 244, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .custom-index-table th, .custom-index-table td {
   vertical-align: middle !important;
   padding: 10px !important;
 }
-/* line 235, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 248, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .custom-index-table th {
   text-align: center;
   background-color: #eeeeee;
   font-weight: 500;
 }
 
-/* line 245, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 258, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .table-curved, .custom-index-table {
   border-collapse: separate;
   border: solid #eeeeee 1px;
@@ -139,40 +157,40 @@ dt, dd {
   border-left: 0px;
   border-top: 0px;
 }
-/* line 252, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 265, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .table-curved thead:first-child tr:first-child th, .custom-index-table thead:first-child tr:first-child th {
   border-bottom: 0px;
   border-top: solid #eeeeee 1px;
 }
-/* line 257, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 270, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .table-curved td, .custom-index-table td, .table-curved th, .custom-index-table th {
   border-left: 1px solid #eeeeee;
   border-top: 1px solid #eeeeee;
 }
-/* line 263, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 276, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .table-curved :first-child :first-child :first-child, .custom-index-table :first-child :first-child :first-child {
   border-top-left-radius: 6px;
 }
-/* line 266, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 279, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .table-curved :first-child :first-child :last-child, .custom-index-table :first-child :first-child :last-child {
   border-top-right-radius: 6px;
 }
-/* line 272, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 285, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .table-curved :last-child :last-child :first-child, .custom-index-table :last-child :last-child :first-child {
   border-bottom-left-radius: 6px;
 }
-/* line 275, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 288, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .table-curved :last-child :last-child :last-child, .custom-index-table :last-child :last-child :last-child {
   border-bottom-right-radius: 6px;
 }
 
-/* line 282, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 295, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .action-icon {
   font-size: 1.2em;
   margin: 2px;
   color: #002f5e !important;
 }
-/* line 286, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 299, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .action-icon:hover, .action-icon:focus {
   color: #115599 !important;
 }
@@ -10084,51 +10102,71 @@ button.close {
 
 /* line 24, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/blurbs.scss */
 #blurb-hash-holder {
+  margin-top: 45px;
   min-height: 500px;
 }
-/* line 26, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/blurbs.scss */
+/* line 27, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/blurbs.scss */
 #blurb-hash-holder h1 {
   font-weight: 600;
   margin-bottom: 20px;
 }
 
-/* line 32, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/blurbs.scss */
+/* line 33, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/blurbs.scss */
 .dashed {
   border: dashed 1px orange;
 }
 
-/* line 36, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/blurbs.scss */
+/* line 37, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/blurbs.scss */
 .blurb {
   margin-bottom: 20px;
 }
 
-/* line 40, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/blurbs.scss */
+/* line 41, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/blurbs.scss */
 .tag {
   list-style: none;
   padding-bottom: 3px;
 }
-/* line 42, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/blurbs.scss */
+/* line 43, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/blurbs.scss */
 .tag span {
   padding: 2px 6px;
 }
 
-/* line 48, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/blurbs.scss */
+/* line 49, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/blurbs.scss */
 body.blurbs-controller.index-action .navbar-default {
   background-color: #f2f2f2;
   border-bottom: none;
 }
 
-/* line 54, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/blurbs.scss */
+/* line 55, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/blurbs.scss */
 .blurb-tags li {
   display: inline-block;
   margin-right: 5px;
 }
 
-/* line 59, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/blurbs.scss */
+/* line 60, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/blurbs.scss */
 #new-blurb {
-  position: fixed;
+  float: right;
   right: 10px;
   z-index: 2;
+}
+
+/* line 66, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/blurbs.scss */
+#new-blurb-button {
+  position: fixed;
+  display: block;
+  height: 50px !important;
+  clear: both;
+  width: 100%;
+  background-color: white;
+  z-index: 2;
+  margin-top: -20px;
+  padding-top: 5px;
+  padding-right: 10px;
+}
+
+/* line 78, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/blurbs.scss */
+.author-name {
+  display: none;
 }
 /* line 1, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/colors.css.scss */
 .white-bg {
@@ -10228,56 +10266,74 @@ label, dt {
   border-bottom: 1px solid #cfe0ed;
 }
 
-/* line 172, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 170, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+.logo-text {
+  font-size: 40px;
+  font-weight: 700;
+}
+/* line 173, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+.logo-text .first-hash {
+  color: #FF8200;
+}
+/* line 176, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+.logo-text .second-hash {
+  color: #3e00a4;
+}
+/* line 179, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+.logo-text .third-hash {
+  color: green;
+}
+
+/* line 185, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 body {
   padding-top: 80px;
 }
 
-/* line 177, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 190, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .navbar-brand {
-  padding-top: 10px !important;
+  padding-top: 20px !important;
 }
 
-/* line 206, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 219, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 dt, dd {
   padding: 5px 0 5px 0;
 }
 
-/* line 212, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 225, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .center-block {
   float: none !important;
 }
 
-/* line 215, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 228, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .footer {
   margin-top: 10px;
 }
 
-/* line 222, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 235, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .custom-index-table th:last-of-type {
   width: 120px;
 }
-/* line 225, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 238, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .custom-index-table td:last-of-type {
   text-align: center;
 }
-/* line 227, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 240, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .custom-index-table td:last-of-type a {
   text-decoration: none !important;
 }
-/* line 231, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 244, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .custom-index-table th, .custom-index-table td {
   vertical-align: middle !important;
   padding: 10px !important;
 }
-/* line 235, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 248, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .custom-index-table th {
   text-align: center;
   background-color: #eeeeee;
   font-weight: 500;
 }
 
-/* line 245, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 258, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .table-curved, .custom-index-table {
   border-collapse: separate;
   border: solid #eeeeee 1px;
@@ -10285,40 +10341,40 @@ dt, dd {
   border-left: 0px;
   border-top: 0px;
 }
-/* line 252, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 265, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .table-curved thead:first-child tr:first-child th, .custom-index-table thead:first-child tr:first-child th {
   border-bottom: 0px;
   border-top: solid #eeeeee 1px;
 }
-/* line 257, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 270, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .table-curved td, .custom-index-table td, .table-curved th, .custom-index-table th {
   border-left: 1px solid #eeeeee;
   border-top: 1px solid #eeeeee;
 }
-/* line 263, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 276, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .table-curved :first-child :first-child :first-child, .custom-index-table :first-child :first-child :first-child {
   border-top-left-radius: 6px;
 }
-/* line 266, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 279, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .table-curved :first-child :first-child :last-child, .custom-index-table :first-child :first-child :last-child {
   border-top-right-radius: 6px;
 }
-/* line 272, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 285, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .table-curved :last-child :last-child :first-child, .custom-index-table :last-child :last-child :first-child {
   border-bottom-left-radius: 6px;
 }
-/* line 275, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 288, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .table-curved :last-child :last-child :last-child, .custom-index-table :last-child :last-child :last-child {
   border-bottom-right-radius: 6px;
 }
 
-/* line 282, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 295, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .action-icon {
   font-size: 1.2em;
   margin: 2px;
   color: #002f5e !important;
 }
-/* line 286, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 299, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .action-icon:hover, .action-icon:focus {
   color: #115599 !important;
 }
@@ -10572,56 +10628,74 @@ label, dt {
   border-bottom: 1px solid #cfe0ed;
 }
 
-/* line 172, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 170, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+.logo-text {
+  font-size: 40px;
+  font-weight: 700;
+}
+/* line 173, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+.logo-text .first-hash {
+  color: #FF8200;
+}
+/* line 176, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+.logo-text .second-hash {
+  color: #3e00a4;
+}
+/* line 179, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+.logo-text .third-hash {
+  color: green;
+}
+
+/* line 185, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 body {
   padding-top: 80px;
 }
 
-/* line 177, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 190, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .navbar-brand {
-  padding-top: 10px !important;
+  padding-top: 20px !important;
 }
 
-/* line 206, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 219, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 dt, dd {
   padding: 5px 0 5px 0;
 }
 
-/* line 212, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 225, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .center-block {
   float: none !important;
 }
 
-/* line 215, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 228, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .footer {
   margin-top: 10px;
 }
 
-/* line 222, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 235, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .custom-index-table th:last-of-type {
   width: 120px;
 }
-/* line 225, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 238, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .custom-index-table td:last-of-type {
   text-align: center;
 }
-/* line 227, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 240, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .custom-index-table td:last-of-type a {
   text-decoration: none !important;
 }
-/* line 231, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 244, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .custom-index-table th, .custom-index-table td {
   vertical-align: middle !important;
   padding: 10px !important;
 }
-/* line 235, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 248, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .custom-index-table th {
   text-align: center;
   background-color: #eeeeee;
   font-weight: 500;
 }
 
-/* line 245, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 258, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .table-curved, .custom-index-table {
   border-collapse: separate;
   border: solid #eeeeee 1px;
@@ -10629,40 +10703,40 @@ dt, dd {
   border-left: 0px;
   border-top: 0px;
 }
-/* line 252, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 265, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .table-curved thead:first-child tr:first-child th, .custom-index-table thead:first-child tr:first-child th {
   border-bottom: 0px;
   border-top: solid #eeeeee 1px;
 }
-/* line 257, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 270, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .table-curved td, .custom-index-table td, .table-curved th, .custom-index-table th {
   border-left: 1px solid #eeeeee;
   border-top: 1px solid #eeeeee;
 }
-/* line 263, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 276, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .table-curved :first-child :first-child :first-child, .custom-index-table :first-child :first-child :first-child {
   border-top-left-radius: 6px;
 }
-/* line 266, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 279, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .table-curved :first-child :first-child :last-child, .custom-index-table :first-child :first-child :last-child {
   border-top-right-radius: 6px;
 }
-/* line 272, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 285, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .table-curved :last-child :last-child :first-child, .custom-index-table :last-child :last-child :first-child {
   border-bottom-left-radius: 6px;
 }
-/* line 275, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 288, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .table-curved :last-child :last-child :last-child, .custom-index-table :last-child :last-child :last-child {
   border-bottom-right-radius: 6px;
 }
 
-/* line 282, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 295, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .action-icon {
   font-size: 1.2em;
   margin: 2px;
   color: #002f5e !important;
 }
-/* line 286, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
+/* line 299, /Users/bwood/code/rails/5.1/pio-network/app/assets/stylesheets/global.scss */
 .action-icon:hover, .action-icon:focus {
   color: #115599 !important;
 }

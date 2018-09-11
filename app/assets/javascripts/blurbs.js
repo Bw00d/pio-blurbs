@@ -3,13 +3,13 @@ $( document ).on('turbolinks:load', function() {
 
 	
   $('.author-box').mouseover(function() {
-    $('.author').hide();
-    $(".author-name").show();
+    $(this).children('.author').hide();
+    $(this).children(".author-name").show();
  
   });
   $('.author-box').mouseleave(function() {
-    $('.author').show();
-    $(".author-name").hide();
+    $(this).children('.author').show();
+    $(this).children(".author-name").hide();
  
   });
 	

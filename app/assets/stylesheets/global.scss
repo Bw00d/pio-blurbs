@@ -167,6 +167,19 @@ $navbar-default-link-disabled-bg:          $brand-light;
 .navbar-default {
   border-bottom: 1px solid #cfe0ed;
 }
+.logo-text {
+  font-size: 40px;
+  font-weight: 700;
+  .first-hash {
+    color: #FF8200;
+  }
+  .second-hash {
+    color: #3e00a4;
+  }
+  .third-hash {
+    color: green;
+  }
+}
 
 // Prevent navbar from covering other elements
 body {
@@ -175,7 +188,7 @@ body {
 
 // Centralize logo vertically in the navbar
 .navbar-brand {
-  padding-top: 10px !important;
+  padding-top: 20px !important;
 }
 
 // Pagination

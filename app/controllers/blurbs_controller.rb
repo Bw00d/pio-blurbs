@@ -74,6 +74,6 @@ class BlurbsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def blurb_params
-      params.require(:blurb).permit(:content, :user_id, :tag_list)
+      params.require(:blurb).permit(:content, :user_id, :tag_list, :private)
     end
 end

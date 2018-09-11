@@ -6,4 +6,10 @@ class Blurb < ApplicationRecord
   def stringify(tag_list)
 	  tag_list.inject('') { |memo, tag| memo += (tag + ',') }[0..-1]
 	end
+
+	def filtered_private(blurbs, user)
+		blurbs = blurbs.reject do |blurb|
+      blurb.private? unless blurb.user == current_user
+    end
+	end
 end

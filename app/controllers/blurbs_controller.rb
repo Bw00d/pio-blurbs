@@ -6,7 +6,7 @@ class BlurbsController < ApplicationController
   # GET /blurbs.json
   def index
     if params[:tag]
-    @blurbs = Blurb.tagged_with(params[:tag])
+    @blurbs = filtered_private(Blurb.tagged_with(params[:tag]), current_user)
   else
     @blurbs = current_user.blurbs
   end
@@ -63,6 +63,12 @@ class BlurbsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to blurbs_url, notice: 'Blurb was successfully destroyed.' }
       format.json { head :no_content }
+    end
+  end
+
+  def filtered_private(blurbs, user)
+    blurbs = blurbs.reject do |blurb|
+      blurb.private? unless blurb.user == current_user
     end
   end
 

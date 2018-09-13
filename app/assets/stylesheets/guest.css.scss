@@ -30,8 +30,9 @@ a.signup-button {
 }
 
 #home-message {
-	margin-top: 10%;
-	min-height: 700px;
+	// min-height: 700px;
+	margin-bottom: 10%;
+	margin-top: 1%;
 	p {
 		font-family: "Open Sans",Verdana,Arial,Helvetica,sans-serif;
     font-size: 16px;
@@ -41,4 +42,30 @@ a.signup-button {
     -webkit-font-smoothing: antialiased;
 	}
 }	
+#todo-block {
+	margin-top: 3%;
+	// min-height: 700px;
+	font-family: "Open Sans",Verdana,Arial,Helvetica,sans-serif;
+  font-size: 16px;
+  line-height: 1.6875;
+  font-weight: normal;
+  letter-spacing: 0;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 10%;
+}
+#home-subfooter {
+	padding-top: 3%;
+	padding-bottom: 3%;
+	h1, h2, h3, h4, h5, h6 {
+		color: #FDF1DF;
+	}
+	background-color: #8AA0B0;
+	color: #FDF1DF;
+	ul {
+		padding-left: 0;
+	}
+	li {
+		list-style: none;
+	}
+}
 

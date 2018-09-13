@@ -1,20 +1,68 @@
 <div id="home-message">
-  <div class="row">
-  	<div class="col-md-8">
+  	<div class="col-md-8 center-block">
       <h1>Save and Share Fire Messenging</h1>
     </div>
 
-  </div>
-  <div class="row">
-  	    <div class="col-sm-6">
+  	    <div class="col-md-8 center-block">
   	<p>Whether you are writing the morning update or answering comments on facebook, avoid wasting time writing the same messages over and over. Save common messages as a blurb that you can copy and paste. Maintain consistency with your staff by sharing popular blurs. At a loss for words? Search <strong>#hashtags</strong> for stock responses. Maybe someone has arleady articulated what you wish to say :)</p>
     </div> 
 
-  </div>
 </div>
 
 <% content_for :second_contents do %>
-<div class="container-fluid second-block white-bg">
+<div class="container-fluid white-bg">
+  <div class="container">
+    <div id="todo-block" class="col-md-8 center-block">
+      <h1>TODO</h1>
+      <p>This application is a work in progress. The basic functionality and I will add the following improvements as time allows. Below is a list of needs. If you have any suggestions feel free to <%= link_to 'contact me', contact_path %>.</p>
+      <ul>
+        <li>Basic style improvements and branding.</li>
+        <li>Functionality for uploading user avatar image.</li>
+        <li>Add comments to blurbs.</li>
+        <li>Add feed so messages can be passed internally.</li>
+        <li>Search filtering for multiple tags.</li>
+        <li>Strategy for organizing a huge number of tags.</li>
+        <li>Add useful PIO links.</li>
+        <li>Add custom url.</li>
+        <li>Make footer 'sticky.'</li>
 
+      </ul>
+    </div>
+  </div>
 </div>
+<% end %>
+<%= content_for :subfooter do %>
+  <div id="home-subfooter" class="container-fluid">
+    <div class="container center-block">
+      <div class="col-md-8 center-block">
+        <div class="col-sm-4">
+          <h5>Information</h5>
+          <ul class="ul-no-style">
+            <li><%= link_to "Inciweb", "https://inciweb.nwcg.gov/", :target => "_blank" %></li>
+            <li><%= link_to "MailChimp", "#", :target => "_blank" %></li>
+            <li><%= link_to "Facebook", "https://inciweb.nwcg.gov/", :target => "_blank" %></li>
+            <li><%= link_to "Gmail", "https://inciweb.nwcg.gov/", :target => "_blank" %></li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <h5>Intel</h5>
+          <ul class="ul-no-style">
+            <li><%= link_to "FAMWEB", "#", :target => "_blank" %></li>
+            <li><%= link_to "Situation Report", "#", :target => "_blank" %></li>
+            <li><%= link_to "7 Day Outlook", "#", :target => "_blank" %></li>
+            <li><%= link_to "Fire EGP", "#", :target => "_blank" %></li>
+            <li><%= link_to "Automated Flight Following", "#", :target => "_blank" %></li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <h5>Useful</h5>
+          <ul class="ul-no-style">
+            <li><%= link_to "NASA Worldview", "https://inciweb.nwcg.gov/", :target => "_blank" %></li>
+            <li><%= link_to "Hemingway Editor", "https://inciweb.nwcg.gov/", :target => "_blank" %></li>
+            <li><%= link_to "Gravit Designer", "https://designer.gravit.io/", :target => "_blank" %></li>
+          </ul>
+      </div>
+    </div>
+    </div>
+  </div>
 <% end %>

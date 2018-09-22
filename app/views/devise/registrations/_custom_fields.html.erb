@@ -16,12 +16,12 @@
 </div>
 <div class="form-group">
   <%= f.label :status %>
-  <%= f.select :status, options_for_select([['Available', 1], ['On Assignment', 2], ['Unavailable', 3]], @user.status ), {}, { class: "form-control" }   %>
+  <%= f.select :status, options_for_select([['Available', 1], ['On Assignment', 2], ['Unavailable', 3]], @user.status ), {prompt: ""}, { class: "form-control" }   %>
 </div>
 <div class="form-group">
   <%= f.label :qualification %>
   <%#= f.text_field :qualification, class: "form-control" %>
-  <%= f.select :qualification, options_for_select([['PIO1'], ['PIO2'], ['PIOF']], @user.qualification),  {}, class: "form-control" %>
+  <%= f.select :qualification, options_for_select([['PIO1'], ['PIO2'], ['PIOF']], @user.qualification),  {prompt: ""}, class: "form-control" %>
 </div>
 <div class="form-group">
   <%= f.check_box :trainee %>

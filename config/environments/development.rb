@@ -70,4 +70,6 @@ Rails.application.configure do
   # detailed exceptions provided by the better-errors gem
   BetterErrors::Middleware.allow_ip! '10.0.2.2'
   config.web_console.whiny_requests = false
+
+  Paperclip.options[:command_path] = "/usr/local/bin/"
 end

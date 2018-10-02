@@ -62,6 +62,7 @@ gem 'select2-rails'
 gem 'exception_notification'
 gem 'font_awesome5_rails'
 gem 'acts-as-taggable-on', '~> 6.0'
+gem "paperclip", "~> 6.0.0"
 
 group :test do
   gem 'database_cleaner'

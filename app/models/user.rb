@@ -23,7 +23,7 @@ class User < ApplicationRecord
   # Callback to set the default role of new records
   after_initialize :set_default_role, if: :new_record?
 
-  devise :database_authenticatable, :lockable, :registerable,
+  devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :timeoutable, :trackable, :validatable
 
   # Allow a single Ransack search field to search the virtual attr 'full_name'

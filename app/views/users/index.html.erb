@@ -7,7 +7,7 @@
 		  		<div class="tcard-head">
 		  			<div class="row">
 			  			<div class="col-xs-7 text-left">
-			  				<div class="avatar"></div><%= user.full_name %>  -  <%=  user.qualification %><%= user.trainee_status %>
+			  				<div class="avatar"><% if user.avatar? %><%= image_tag user.avatar.url(:icon) %><% else %><%= fa_icon 'user', class: "user-icon" %><% end %></div><%= user.full_name %>  -  <%=  user.qualification %><%= user.trainee_status %>
 			  			</div>
 			  	
 			  			<div class="col-xs-5 text-right">

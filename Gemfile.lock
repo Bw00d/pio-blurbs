@@ -47,13 +47,20 @@ GEM
     autoprefixer-rails (7.1.2.4)
       execjs
     awesome_print (1.8.0)
-    aws-sdk (2.11.142)
-      aws-sdk-resources (= 2.11.142)
-    aws-sdk-core (2.11.142)
+    aws-eventstream (1.0.1)
+    aws-partitions (1.105.0)
+    aws-sdk-core (3.29.0)
+      aws-eventstream (~> 1.0)
+      aws-partitions (~> 1.0)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.11.142)
-      aws-sdk-core (= 2.11.142)
+    aws-sdk-kms (1.9.0)
+      aws-sdk-core (~> 3, >= 3.26.0)
+      aws-sigv4 (~> 1.0)
+    aws-sdk-s3 (1.20.0)
+      aws-sdk-core (~> 3, >= 3.26.0)
+      aws-sdk-kms (~> 1)
+      aws-sigv4 (~> 1.0)
     aws-sigv4 (1.0.3)
     bcrypt (3.1.11)
     better_errors (2.3.0)
@@ -347,7 +354,7 @@ PLATFORMS
 DEPENDENCIES
   acts-as-taggable-on (~> 6.0)
   awesome_print
-  aws-sdk (~> 2.3)
+  aws-sdk-s3
   better_errors
   binding_of_caller
   bootstrap-sass

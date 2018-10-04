@@ -26,7 +26,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :timeoutable, :trackable, :validatable
 
-  has_attached_file :avatar, :styles => { med: "100x100", icon: "40x40" }, :default_url => "/images/silouhette.png", dependent: :destroy
+  has_attached_file :avatar, :url =>':s3_domain_url', :path => '/:class/:attachment/:id_partition/:style/:filename', 
+  :styles => { med: "100x100", icon: "40x40" }, dependent: :destroy
   validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
 
   # Allow a single Ransack search field to search the virtual attr 'full_name'

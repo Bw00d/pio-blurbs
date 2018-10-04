@@ -102,4 +102,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  #Heroku database URL
+  ENV["DATABASE_URL"] = "postgres://ispalnhfvzrrye:34f7f6668f15e89be7e5c75b98dac5c94d8fc5e753632f19d2661c813298bc95@ec2-50-17-194-186.compute-1.amazonaws.com:5432/d7a13kl04i74n1"
 end

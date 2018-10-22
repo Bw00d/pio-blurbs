@@ -13,8 +13,7 @@ This app is obviously bare bones and needs quite a bit of work but it is functio
 
 I will be improving the functionality and branding in the coming weeks. I will also be testing it on an incident and may discover bugs and opportunities for improvement.
 
-- Add user avatar
-- Flesh out home page
+- Flesh out home page: branding, logo, etc.
 - Make style consitent across pages
 - Set up some form of pagination for blurbs and users
 - Make tag cloud stationary so that scrolling does not hide them

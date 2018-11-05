@@ -5,21 +5,12 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-# Choose between PostgreSQL and MySQL (comment out one of the following gems)
 gem 'pg', '~> 0.21.0'
-# gem 'mysql2', '~> 0.4.9'
-
-
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.3'
 # Use Puma as the app server
 gem 'puma', '~> 3.10'
-# Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0', '>= 5.0.6'
-# Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '~> 3.2'
-# Turbolinks makes navigating your web application faster. Read more:
-# https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5.0', '>= 5.0.1'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
@@ -31,7 +22,6 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootstrap-sass'
 # List of countries and their respective states and cities
 gem 'city-state'
-# Authentication
 gem 'devise'
 # Generate fake user names, e-mails, adresses, IPs, lorem text, etc. Include
 # in all environments as we might use it to seed the DB in test deploys.

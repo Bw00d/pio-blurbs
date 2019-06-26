@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-	include SkipAuthorization
+	# include SkipAuthorization
 	helper UsersHelper
 
 	def index

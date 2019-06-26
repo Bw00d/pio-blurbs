@@ -14,12 +14,12 @@
   
 
   <div class="form-group">
-    <%= f.label :tag_list, "Tags (separated by commas)" %>
-    <%= f.text_field :tag_list, value: blurb.tag_list.to_s, class: "form-control" %>
+    <%= f.label :tag_list, "Tags (separated by commas )" %>
+    <%= f.text_field :tag_list, required: true, placeholder: "Ex. (firing operations, smoke, Swamp Goat Fire)", value: blurb.tag_list.to_s, class: "form-control" %>
   </div>
   <div class="form-group">
     <%= f.label :content %>
-    <%= f.text_area :content, id: :blurb_content, rows: "10", class: "form-control" %>
+    <%= f.text_area :content, id: :blurb_content, required: true,  rows: "10", class: "form-control" %>
   </div>
   <div class="form-group">
     <%= f.check_box :private %>

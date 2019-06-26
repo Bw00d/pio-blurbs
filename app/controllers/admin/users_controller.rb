@@ -25,24 +25,24 @@ module Admin
 
     # GET /admin/users/1
     def show
-      authorize current_user
+      authorize @user
     end
 
     # GET /admin/users/new
     def new
       @user = User.new
-      authorize current_user
+      authorize @user
     end
 
     # GET /admin/users/1/edit
     def edit
-      authorize current_user
+      authorize @user
     end
 
     # POST /admin/users
     def create
       @user = User.new(user_params)
-      authorize current_user
+      authorize @user
 
       if @user.save
         redirect_to [:admin, @user], notice: t('.success')
@@ -53,7 +53,7 @@ module Admin
 
     # PATCH/PUT /admin/users/1
     def update
-      authorize current_user
+      authorize @user
 
       # Allow updating the user without changing its password (password field
       # will be blank). Remove the password key of the params hash if it's blank
@@ -75,10 +75,11 @@ module Admin
 
     # DELETE /admin/users/1
     def destroy
-      authorize current_user
+      if current_user.role == 'admin' || current_user == @user
 
-      @user.destroy
-      redirect_to admin_users_url, notice: t('.success')
+        @user.destroy
+        redirect_to admin_users_url, notice: t('.success')
+      end
     end
 
     private

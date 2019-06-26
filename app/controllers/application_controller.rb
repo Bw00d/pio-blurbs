@@ -8,12 +8,12 @@ class ApplicationController < ActionController::Base
   # Ensure that Pundit's #verify_policy_scoped or #verify_authorized are
   # called in all actions of all controllers. In other words, ensure
   # authorization policies are enforced everywhere.
-  after_action :verify_authorized,
-               except: :index,
-               unless: :devise_controller?
-  after_action :verify_policy_scoped,
-               only: :index,
-               unless: :devise_controller?
+  # after_action :verify_authorized,
+  #              except: :index,
+  #              unless: :devise_controller?
+  # after_action :verify_policy_scoped,
+  #              only: :index,
+  #              unless: :devise_controller?
 
   # Require authentication for all requests. Add
   # skip_before_action :authenticate_user! to controllers that should not

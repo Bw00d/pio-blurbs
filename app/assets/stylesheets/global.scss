@@ -188,7 +188,11 @@ body {
 
 // Centralize logo vertically in the navbar
 .navbar-brand {
-  padding-top: 10px !important;
+  h4 {
+    font-size: 1.5em !important;
+  }
+  padding-top: 1px !important;
+
 }
 
 // Pagination

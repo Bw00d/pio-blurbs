@@ -3,6 +3,7 @@ class Blurb < ApplicationRecord
   # acts_as_taggable_on :content
   belongs_to :user
   validates :content, presence: true
+  
   def stringify(tag_list)
 	  tag_list.inject('') { |memo, tag| memo += (tag + ',') }[0..-1]
 	end

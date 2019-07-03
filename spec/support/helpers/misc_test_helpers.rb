@@ -58,4 +58,11 @@ module MiscTestHelpers
       end
     end
   end
+
+  def login_user(user)
+    click_link 'Log in'
+    fill_in 'E-mail', with: user.email
+    fill_in 'Password', with: user.password
+    click_button 'Log in'
+  end
 end

@@ -19,6 +19,7 @@ class User < ApplicationRecord
   validates :first_name, :last_name, presence: true
   # Custom password strength validation
   validate :password_strength
+  validate :is_bot?
 
   # Callback to set the default role of new records
   after_initialize :set_default_role, if: :new_record?
@@ -94,6 +95,12 @@ class User < ApplicationRecord
     if password.present? &&
        (password.length < minimum_length || !password.match(complexity_regex))
       errors.add :password, :weak_password
+    end
+  end
+
+  def is_bot?
+    if self.first_name == self.last_name  
+      errors.add(:user_email, "cannot be blank")
     end
   end
 end

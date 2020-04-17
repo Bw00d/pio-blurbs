@@ -30,12 +30,27 @@ Rails.application.configure do
   #   }
   
 
+
+
   config.middleware.use ExceptionNotification::Rack,
-                        email: {
-                          email_prefix: '[EXCEPTION] ',
-                          sender_address: %[PIO Network" <bwoodreid@gmail.com>],
-                          exception_recipients: %w[bwoodreid@gmail.com]
-                        }
+    email: {
+      email_prefix: '[EXCEPTION] ',
+      sender_address: %[Alaska Team PIOs" <bwoodreid@incidentresponselab.com>],
+      exception_recipients: %w[bwoodreid@incidentresponselab]
+    }
+
+   # Setup the mailer config
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.default_url_options = { host: "https://www.inciblurbs.com" }
+  ActionMailer::Base.smtp_settings = {
+  address: 'smtp.sendgrid.net',
+  port: 587,
+  domain: 'inciblurbs.com',
+  user_name: ENV['SENDGRID_USERNAME'],
+  password: ENV['SENDGRID_PASSWORD'],
+  authentication: :login,
+  enable_starttls_auto: true
+}
 
   # Code is not reloaded between requests.
   config.cache_classes = true

@@ -35,7 +35,7 @@ Rails.application.configure do
   config.middleware.use ExceptionNotification::Rack,
     email: {
       email_prefix: '[EXCEPTION] ',
-      sender_address: %[Alaska Team PIOs" <bwoodreid@incidentresponselab.com>],
+      sender_address: %[Inciblurbs" <bwoodreid@incidentresponselab.com>],
       exception_recipients: %w[bwoodreid@incidentresponselab]
     }
 

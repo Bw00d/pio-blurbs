@@ -1,8 +1,8 @@
 # :nodoc:
 class ContactFormsController < ApplicationController
   # This controller does not require authorization or authentication
-  include SkipAuthorization
-  skip_before_action :authenticate_user!
+  #include SkipAuthorization
+  #skip_before_action :authenticate_user!
 
   def new
     @contact_form = ContactForm.new

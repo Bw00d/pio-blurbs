@@ -1,7 +1,7 @@
 # PIO Blurbs
 
 ## Summary
-This is an application for saving common messaging that can be shared among users. It has been developed for fire service Public Information Officers. Users create blurbs of common resposes and messenging that can be reused to help keep messenging consistent. 
+This is an application for saving common messaging that can be shared among users. It has been developed for fire service Public Information Officers. Users create blurbs of common resposes and messenging that can be reused to help keep messenging consistent. The live app can be found at [inciblurbs.com](https://inciblurbs.com "Save and share incident messaging.")
 
 ## Features
 User can create blurbs and assign them hashtags so they are searchable by context and so that they can be shared with other users.

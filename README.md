@@ -1,4 +1,4 @@
-#PIO Blurbs
+# PIO Blurbs
 
 ## Summary
 This is an application for saving common messaging that can be shared among users. It has been developed for fire service Public Information Officers. Users create blurbs of common resposes and messenging that can be reused to help keep messenging consistent. 
@@ -11,7 +11,7 @@ Users can create profiles and set their availability status so that Lead informa
 ## Todo
 This app is obviously bare bones and needs quite a bit of work but it is functional.
 
-I will be improving the functionality and branding in the coming weeks. I will also be testing it on an incident and may discover bugs and opportunities for improvement.
+I will be improving the functionality and branding as time allows. I will also be testing it on an incident and may discover bugs and opportunities for improvement.
 
 - Flesh out home page: branding, logo, etc.
 - Make style consitent across pages
@@ -19,6 +19,7 @@ I will be improving the functionality and branding in the coming weeks. I will a
 - Make tag cloud stationary so that scrolling does not hide them
 - Add some sort of public feed
 - Make footer Sticky
+- Add scraper to download published incident updates to provide additional content for users
 
 ## License
 

@@ -9,7 +9,7 @@ ruby '2.4.4'
 gem 'pg', '~> 0.21.0'
 gem 'rails', '5.2.4.3'
 # Use Puma as the app server
-gem 'puma', '~> 3.10'
+gem 'puma', '~> 4.3'
 gem 'sass-rails', '~> 5.0', '>= 5.0.6'
 gem 'uglifier', '~> 3.2'
 gem 'turbolinks', '~> 5.0', '>= 5.0.1'
